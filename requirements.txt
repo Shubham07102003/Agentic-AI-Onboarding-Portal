@@ -1,0 +1,19 @@
+python-dotenv>=1.0.0
+
+openai>=1.1.0
+
+# Core numeric stack
+numpy>=1.25.0
+pandas>=2.0.0
+
+tqdm>=4.65.0
+openpyxl>=3.1.0
+rank-bm25>=0.2.2
+rapidfuzz>=3.9.6
+
+# API server
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.9
+aiofiles>=23.2.1
+orjson>=3.9.15

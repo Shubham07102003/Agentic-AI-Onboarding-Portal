@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-neutral-50 text-neutral-900;
+}
+
+/* Typography for markdown rendering */
+.prose {
+  --tw-prose-body: theme(colors.neutral.800);
+  --tw-prose-headings: theme(colors.neutral.900);
+  --tw-prose-links: theme(colors.brand.600);
+  --tw-prose-bold: theme(colors.neutral.900);
+}
+
+/* Elevated banking UI touches */
+.chat-container {
+  @apply rounded-2xl border bg-white shadow-lg;
+}
+.chat-input {
+  @apply rounded-full border bg-white px-4 py-2 shadow-sm focus-within:ring-2 focus-within:ring-brand-300 text-neutral-900;
+}
+.chip {
+  @apply px-3 py-1.5 rounded-full bg-white border hover:border-brand-400 hover:text-brand-700 transition text-sm;
+}
+
